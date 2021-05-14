@@ -8,6 +8,7 @@ function closeTab() {
   window.close(); 
 } 
 
+
 window.onload = () => {
   'use strict';
 
