@@ -29,6 +29,16 @@ const messageInput = document.getElementById('message-input');
 const submit = document.getElementById('submit');
 const hide = 'hide';
 
+function storeName() {
+    localStorage.setItem("name", document.getElementById("username-input").value);
+}
+
+
+if (localStorage.length > 0) {
+    document.getElementById('welcome').innerHTML = "Welcome Back";
+    document.getElementById('phrase').style.display = "none";
+}
+
 // PubNub Channel for sending/receiving global chat messages
 //     also used for user presence with PubNub Presence
 const globalChannel = 'global-channel';
@@ -313,7 +323,7 @@ function confirmCall(name) {
 function getLocalUserName() {
     return new Promise((resolve) => {
         usernameInput.focus();
-        usernameInput.value = '';
+        usernameInput.value = localStorage.getItem("name");
 
         usernameInput.addEventListener('keyup', (event) => {
             const nameLength = usernameInput.value.length;
@@ -327,6 +337,7 @@ function getLocalUserName() {
             if (event.keyCode === 13 && nameLength > 0) {
                 resolve(usernameInput.value);
             }
+            storeName();
         });
 
         joinButton.addEventListener('click', (event) => {

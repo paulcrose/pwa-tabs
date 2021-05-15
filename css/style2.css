@@ -25,6 +25,10 @@ body > div {
     background: transparent;
 }
 
+.phrase {
+    display: inline;
+}
+
 h1 {
     margin: 0px;
     font-size: 30px;
