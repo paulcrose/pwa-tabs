@@ -112,13 +112,17 @@
 <script src="js/app.js" type="text/javascript"></script>
 <script>
 
-document.addEventListener('visibilitychange', function() {
-  if (document.visibilityState === 'hidden') {
-    closeTab();
-  }
-});
-
-</script>
+  function closeTab() { 
+    window.close(); 
+  } 
+  
+  document.addEventListener('visibilitychange', function() {
+    if (document.visibilityState === 'hidden') {
+      closeTab();
+    }
+  });
+  
+ </script>
 
 </html>
 

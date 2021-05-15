@@ -4,9 +4,6 @@ function newTab() {
     "page_2.html", "_blank"); 
 } 
 
-function closeTab() { 
-  window.close(); 
-} 
 
 
 window.onload = () => {
