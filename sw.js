@@ -4,7 +4,9 @@ var filesToCache = [
   './index.html',
   './page_2.html',
   './css/style.css',
-  './js/main.js'
+  './css/style2.css',
+  './js/main.js',
+  './js/app.js'
   
 ];
 
