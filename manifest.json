@@ -2,9 +2,21 @@
   "name": "Hello World",
   "short_name": "Hello",
   "icons": [{
-    "src": "images/OpenChat-icon-128.png",
+    "src": "images/OpenChat-icon-120.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    },{
+      "src": "images/OpenChat-icon-128.png",
+        "sizes": "128x128",
+        "type": "image/png"
+      },{
+      "src": "images/OpenChat-icon-128.png",
       "sizes": "128x128",
       "type": "image/png"
+    },{
+      "src": "images/OpenChat-icon-140.png",
+        "sizes": "140x140",
+        "type": "image/png"
     }, {
       "src": "images/OpenChat-icon-144.png",
       "sizes": "144x144",
